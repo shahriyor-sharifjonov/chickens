@@ -59,7 +59,7 @@
     }
     &:nth-child(3){
       & .advantages__item-num::after{
-        top: 80px;
+        top: 74px;
         left: 50%;
       }
     }
@@ -67,6 +67,18 @@
       & .advantages__item-num::after{
         top: -20px;
         left: 60px;
+      }
+    }
+    &:nth-child(6){
+      & .advantages__item-num::after{
+        top: 50px;
+        left: 72px;
+      }
+    }
+    &:nth-child(7){
+      & .advantages__item-num::after{
+        top: 74px;
+        left: 50px;
       }
     }
     &-num{
