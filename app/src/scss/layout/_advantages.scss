@@ -1,10 +1,11 @@
 .advantages{
   position: relative;
+  margin-bottom: 200px;
   &::before{
     content: '';
     position: absolute;
-    top: -135px;
-    height: 135px;
+    top: -165px;
+    height: 166px;
     left: 0;
     width: 100%;
     background: url('../images/bg-top.png') center / cover no-repeat;
@@ -12,8 +13,8 @@
   &::after{
     content: '';
     position: absolute;
-    bottom: -135px;
-    height: 135px;
+    bottom: -166px;
+    height: 166px;
     left: 0;
     width: 100%;
     background: url('../images/bg-bottom.png') center / cover no-repeat;
