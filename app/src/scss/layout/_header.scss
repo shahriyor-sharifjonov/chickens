@@ -1,0 +1,33 @@
+.header{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 120px;
+  &__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media(992){
+      justify-content: center;
+    }
+  }
+  &__col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include media(992){
+      display: none;
+    }
+  }
+  &__p{
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  &__link{
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+}

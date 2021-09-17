@@ -1,3 +1,14 @@
 mixin header()
-  header.header 
-    p header
+  header.header#top
+    .header__body.container 
+      a(href="index.html#top").header__logo
+        img(src="images/logo.png", alt="INKUBA")
+      .header__col 
+        p.header__p Для роздрібних продажів
+        a(href="tel:+380969044058").header__link +38 096 904 40 58
+      .header__col 
+        p.header__p Для оптових продажів
+        a(href="tel:+380672184187").header__link +38 067 218 41 87
+      .header__col 
+        p.header__p Електронна пошта
+        a(href="mailto:incuba@ukr.net").header__link incuba@ukr.net
