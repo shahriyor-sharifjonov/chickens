@@ -2,6 +2,23 @@
   position: relative;
   margin-bottom: 200px;
   padding-bottom: 20px;
+  &__img{
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    z-index: -2;
+    @include media(1639){
+      right: 15px;
+    }
+    @include media(1480){
+      display: none;
+    }
+    @include media(992){
+      display: block;
+      position: static;
+      max-width: 100%;
+    }
+  }
   &__el{
     position: absolute;
     background: #FAD653;
@@ -9,7 +26,7 @@
     border-radius: 50%;
     z-index: -1;
     @include media($md){
-      display: none;
+      display: none; 
     }
     &_small{
       width: 70px;
