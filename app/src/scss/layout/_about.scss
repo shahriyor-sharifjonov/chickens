@@ -1,0 +1,91 @@
+.about{
+  margin-bottom: 150px;
+  @include media(992){
+    margin-bottom: 100px;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: #1A1A1A;
+    margin-bottom: 25px;
+  }
+  &__p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 181.2%;
+    color: #1A1A1A;
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 70px;
+    @include media(992){
+      display: block;
+    }
+    &-content{
+      margin-right: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-image{
+      max-width: 300px;
+      min-width: 300px;
+      height: 300px;
+      position: relative;
+      @include media(992){
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &-img{
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+    }
+    &-btn{
+      width: 69px;
+      height: 69px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 4px;
+      background: #714846;
+      box-shadow: -7px -3px 15px rgba(0, 0, 0, 0.25);
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      img{
+        pointer-events: none;
+      }
+    }
+  }
+  &__gallery{
+    @include media(992){
+      display: none;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__slider{
+    display: none;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    @include media(992){
+      display: block;
+      & .slick{
+        &-list{
+          overflow: hidden;
+        }
+        &-track{
+          display: flex;
+        }
+      }
+    }
+  }
+}
