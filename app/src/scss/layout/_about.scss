@@ -1,7 +1,7 @@
 .about{
-  margin-bottom: 150px;
-  @include media(992){
-    margin-bottom: 100px;
+  margin-bottom: 300px;
+  @include media($md){
+    margin-bottom: 200px;
   }
   &__title{
     font-weight: 600;
@@ -124,6 +124,101 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+  &__bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 150px;
+    @include media(992){
+      margin-top: 100px;
+    }
+    &-title{
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 38px;
+      color: #1A1A1A;
+      margin-bottom: 50px;
+    }
+    &-row{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 900px;
+      width: 100%;
+      @include media($md){
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+    &-item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      &:last-child{
+        @include media($md){
+          margin-top: 70px;
+        }
+        .about__bottom-num{
+          &::before{
+            left: -15px;
+          }
+          &::after{
+            top: -15px;
+            left: 50px;
+          }
+        }
+      }
+    }
+    &-num{
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 46px;
+      color: #1A1A1A;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #FAD653;
+      box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.25);
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        top: -24px;
+        left: 13px;
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        background: #FAD653;
+        z-index: -1;
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        top: 12px;
+        left: -9px;
+        background: #FAD653;
+        z-index: -1;
+      }
+    }
+    &-p{
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 31px;
+      text-align: center;
+      color: #1A1A1A;
+      margin-top: 20px;
     }
   }
 }

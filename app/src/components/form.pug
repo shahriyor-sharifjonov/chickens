@@ -1,0 +1,15 @@
+mixin form()
+  .form   
+    .form__body.container 
+      h2.form__title Зворотній зв'язок для оформлення замовлення
+      p.form__p Будь ласка, залиште свої дані, і протягом дня з Вами зв'яжеться наш менеджер
+      form(action="").form__content
+        label(for="").form__label Ваше ім'я
+        input(type="text" placeholder="Іван").form__input 
+        label(for="").form__label Ваш номер телефону
+        input(type="text" placeholder="099 999 99 99").form__input 
+        label(for="").form__label Ваша електронна пошта
+        input(type="text" placeholder="ivan999@gmail.com").form__input 
+        label(for="").form__label Ваше повідомлення
+        textarea(name="", cols="30", rows="10" placeholder="Я хочу замовити...").form__input
+        button(type="submit").btn.form__btn Відправити
