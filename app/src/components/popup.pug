@@ -1,0 +1,94 @@
+mixin popup()
+  .popup 
+    .popup__body 
+      .popup__body-container
+        p.popup__title Дані продуктивності
+        p.popup__subtitle НЕСУЧКИ ЛОМАНН БРАУН ЕКСТРА
+        .popup__content 
+          .popup__item
+            .popup__item-left.popup__item-top-brad 
+              p.popup__item-title Несучість
+            .popup__item-right
+              .popup__subitem.popup__item-top-brad   
+                .popup__subitem-left
+                  p.popup__item-p Вік при 50% продуктивності
+                  p.popup__item-p Пік продуктивності
+                .popup__subitem-right
+                  p.popup__item-p 140 - 150 днів
+                  p.popup__item-p 93 - 95%
+              p.popup__item-subtitle Кількість яєць на ПН
+              .popup__subitem 
+                .popup__subitem-left
+                  p.popup__item-p У віці 72 тижнів
+                  p.popup__item-p у віці 80 тижнів
+                  p.popup__item-p у віці 95 тижнів
+                .popup__subitem-right
+                  p.popup__item-p 312 - 317 (316)
+                  p.popup__item-p 353 - 358 (356)
+                  p.popup__item-p 418 - 423 (422)
+              p.popup__item-subtitle Яйцемаса на ПН
+              .popup__subitem 
+                .popup__subitem-left
+                  p.popup__item-p У віці 72 тижнів
+                  p.popup__item-p у віці 80 тижнів
+                  p.popup__item-p у віці 95 тижнів
+                .popup__subitem-right
+                  p.popup__item-p 20,0 - 21,0 кг (20,40 кг)
+                  p.popup__item-p 22,5 - 23,5 кг (23,14 кг)
+                  p.popup__item-p 27,0 - 28,0 кг (27,76 кг)
+              p.popup__item-subtitle Кількість яєць на ПН
+              .popup__subitem 
+                .popup__subitem-left
+                  p.popup__item-p Вік при 50% продуктивності
+                  p.popup__item-p Пік продуктивності
+                .popup__subitem-right
+                  p.popup__item-p 140 - 150 днів
+                  p.popup__item-p 93 - 95%
+          .popup__item
+            .popup__item-left
+              p.popup__item-title Характеристика яйця
+            .popup__item-right
+              .popup__subitem 
+                .popup__subitem-left
+                  p.popup__item-p Колір шкаралупи
+                  p.popup__item-p Міцність шкаралупи
+                .popup__subitem-right
+                  p.popup__item-p Привабливо коричневий 
+                  p.popup__item-p > 40 Ньютон
+          .popup__item
+            .popup__item-left
+              p.popup__item-title Споживання корму
+            .popup__item-right
+              .popup__subitem 
+                .popup__subitem-left
+                  p.popup__item-p 1 - 20 НЖ
+                  p.popup__item-p Продуктивний період
+                  p.popup__item-p Конверсія корму
+                .popup__subitem-right
+                  p.popup__item-p 7,4 - 7,8 кг
+                  p.popup__item-p 112 - 120 г/день
+                  p.popup__item-p 2,0 - 2,2 кг/кг яйцемаси
+          .popup__item
+            .popup__item-left
+              p.popup__item-title Жива маса
+            .popup__item-right
+              .popup__subitem 
+                .popup__subitem-left
+                  p.popup__item-p На 20 тижні
+                  p.popup__item-p Наприкінці продуктивного періоду
+                .popup__subitem-right
+                  p.popup__item-p 1,58 - 1,70 кг
+                  p.popup__item-p 1,88 - 1,98 кг
+          .popup__item
+            .popup__item-left.popup__item-bottom-brad 
+              p.popup__item-title Збереженість
+            .popup__item-right
+              .popup__subitem.popup__item-bottom-brad    
+                .popup__subitem-left
+                  p.popup__item-p Період вирощування
+                  p.popup__item-p Продуктивний період
+                .popup__subitem-right
+                  p.popup__item-p 97 - 98%
+                  p.popup__item-p 90 - 95%
+        a(href="#form" onclick="closePopup()").popup__btn.btn Замовити
+        button(onclick="closePopup()").popup__link Повернутися на головну 

@@ -1,0 +1,207 @@
+.popup{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00000050;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  z-index: 500;
+  display: none;
+  &.active{
+    display: flex;
+  }
+  &__body{
+    background: #FFFFFF;
+    border-radius: 30px 30px 30px 30px;
+    padding: 30px 100px 30px 100px;
+    max-width: 1010px;
+    width: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+    @include media($md){
+      padding: 30px;
+    }
+    @include media($sm){
+      padding: 30px 15px;
+    }
+    @media (hover: hover){
+      border-radius: 30px 0 0 30px;
+    }
+    &-container{
+      max-height: 100%;
+    }
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+    @include media(992){
+      text-align: center;
+    }
+    @include media($sm){
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 15px;
+    }
+  }
+  &__subtitle{
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 31px;
+    color: #1A1A1A;
+    margin-bottom: 12px;
+    @include media(992){
+      text-align: center;
+    }
+    @include media($sm){
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  &__item{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    @include media(992){
+      flex-direction: column;
+    }
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+    &-title{
+      font-weight: 450;
+      font-size: 20px;
+      line-height: 26px;
+      color: #1A1A1A;
+      @include media($sm){
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    &-subtitle{
+      font-weight: 450;
+      font-size: 18px;
+      line-height: 23px;
+      color: #EDBA00;
+      margin: 5px 20px;
+      @include media(992){
+        text-align: center;
+      }
+      @include media($sm){
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    &-left{
+      background: #FAD653;
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+      max-width: 289px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      z-index: 1;
+      @include media(992){
+        max-width: 100%;
+      }
+      &.popup__item-top-brad{
+        border-radius: 25px 0 0 0;
+        @include media(992){
+          border-radius: 25px 25px 0 0;
+        }
+      }
+      &.popup__item-bottom-brad{
+        border-radius: 0 0 0 25px;
+        @include media(992){
+          border-radius: 0;
+        }
+      }
+    }
+    &-right{
+      max-width: 515px;
+      width: 100%;
+      @include media(992){
+        max-width: 100%;
+      }
+    }
+    &-p{
+      font-size: 16px;
+      line-height: 21px;
+      color: #1A1A1A;
+      @include media($md){
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+  &__subitem{
+    background: #FFEFDC;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 20px;
+    @include media($sm){
+      padding: 8px 10px;
+    }
+    &.popup__item-top-brad{
+      border-radius: 0 20px 0 0;
+      @include media(992){
+        border-radius: 0;
+      }
+    }
+    &.popup__item-bottom-brad{
+      border-radius: 0 0 20px 0;
+      @include media(992){
+        border-radius: 0 0 20px 20px;
+      }
+    }
+    &-right{
+      p{
+        @include media($md){
+          text-align: right;
+        }
+      }
+    }
+  }
+  &__btn{
+    max-width: 288px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+  }
+  &__link{
+    font-size: 18px;
+    line-height: 23px;
+    border: none;
+    background: none;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #828282;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+}

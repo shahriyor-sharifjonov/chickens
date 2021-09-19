@@ -122,7 +122,10 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 26px;
-    color: #1a1a1a50;
+    color: #1a1a1a;
+    &::placeholder{
+      color: #1a1a1a50;
+    }
     @include media($md){
       font-size: 16px;
       line-height: 21px;
