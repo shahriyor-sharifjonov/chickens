@@ -9,8 +9,28 @@
     outline: none;
   }
 }
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background: #fafafa;
+}
+::-webkit-scrollbar-thumb {
+  background: #FAD653;
+  border: 4px solid #fafafa;
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #FAD653;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffc800;
+}
+
 body{
   font-family: 'Futura PT', 'Exo 2.0';
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 button{
   font-family: inherit;

@@ -2,6 +2,8 @@ mixin popup()
   .popup 
     .popup__body 
       .popup__body-container
+        button(onclick="closePopup()").popup__close-btn 
+          img(src="../images/close.svg", alt="")
         p.popup__title Дані продуктивності
         p.popup__subtitle НЕСУЧКИ ЛОМАНН БРАУН ЕКСТРА
         .popup__content 

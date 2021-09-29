@@ -29,8 +29,8 @@ mixin about()
           .about__slider-item
             img(src="images/about-slider-11.png", alt="").about__slider-img
         .about__top-image 
-          img(src="images/about-img.png", alt="about").about__top-img
-          a(href="#!").about__top-btn <img src="images/play.png" alt="play"> 
+          img(src="images/about-img.png", alt="about").about__top-img 
+          a(href="#!" onclick="openVideo()").about__top-btn <img src="images/play.png" alt="play"> 
       .about__gallery.disable-on-mobile
         img(src="images/gallery-img.png", alt="")
       .about__bottom#about-bottom
@@ -42,3 +42,4 @@ mixin about()
           .about__bottom-item
             p.about__bottom-num 2
             p.about__bottom-p Послуги інкубації
+    
